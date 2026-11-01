@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- HTML TOPIC: document structure, meta tags, links to CSS/JS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio demonstrating HTML, CSS and JavaScript">
+  <meta name="author" content=" Mohd Naved Alam">
+  <title>Mohd Naved Alam | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Scroll progress bar (HTML5 <progress> is styled/driven by JS) -->
+  <progress id="scrollBar" value="0" max="100" aria-label="Scroll progress"></progress>
+
+  <!-- ============ HEADER / NAV (semantic tags: header, nav) ============ -->
+  <header class="site-header">
+    <a href="#home" class="logo">&lt;Naved/&gt;</a>
+    <nav aria-label="Main navigation">
+      <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">&#9776;</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+      
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <main>
+    
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Mohd Naved Alam</h1>
+        <h2>I am a <span id="typed" class="typed"></span><span class="cursor">|</span></h2>
+        <p>I build clean, responsive web pages using <strong>HTML</strong>, <em>CSS</em> and <mark>JavaScript</mark>.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View my work</a>
+          <a class="btn btn-outline" href="#contact">Hire me</a>
+        </div>
+        <p class="clock-line">Local time: <time id="clock"></time></p>
+      </div>
+
+      <!-- My Profile Picture -->
+<!-- My Profile Picture -->
+<!-- Profile Picture and Social Links -->
+<div class="profile-container">
+
+    <figure class="avatar">
+        <img src="naved.png" alt="Mohd Naved Alam">
+    </figure>
+
+    <div class="social-links">
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/naved-alam-a28bb1300/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-btn linkedin"
+           aria-label="LinkedIn"
+           title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                      d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.34 17.34V9.67H5.79V17.34H8.34ZM7.07 8.62A1.48 1.48 0 1 0 7.07 5.66A1.48 1.48 0 0 0 7.07 8.62ZM18.21 17.34V13.14C18.21 10.89 17.01 9.85 15.42 9.85C14.14 9.85 13.57 10.55 13.25 11.04V9.67H10.7C10.73 10.43 10.7 17.34 10.7 17.34H13.25V13.06C13.25 12.83 13.27 12.6 13.34 12.44C13.53 11.98 13.96 11.5 14.68 11.5C15.63 11.5 16.01 12.23 16.01 13.3V17.34H18.21Z"/>
+            </svg>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/navedalam232006-dotcom"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-btn github"
+           aria-label="GitHub"
+           title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                      d="M12 .9A11.1 11.1 0 0 0 8.49 22.53C9.04 22.63 9.25 22.29 9.25 22V20.1C5.85 20.84 5.2 18.65 5.2 18.65C4.7 17.36 3.98 17.01 3.98 17.01C2.87 16.25 4.06 16.27 4.06 16.27C5.29 16.36 5.94 17.53 5.94 17.53C7.03 19.39 8.8 18.86 9.3 18.58C9.41 17.87 9.73 17.39 10.08 17.12C7.37 16.81 4.52 15.76 4.52 10.93C4.52 9.55 5.01 8.42 5.97 7.53C5.84 7.21 5.41 5.92 6.1 4.19C6.1 4.19 7.13 3.86 9.23 5.28A10.7 10.7 0 0 1 12 4.91C12.94 4.91 13.88 5.04 14.77 5.28C16.87 3.86 17.9 4.19 17.9 4.19C18.59 5.92 18.16 7.21 18.03 7.53C18.99 8.42 19.48 9.55 19.48 10.93C19.48 15.77 16.62 16.8 13.9 17.11C14.35 17.46 14.75 18.15 14.75 19.21V22C14.75 22.29 14.95 22.63 15.52 22.53A11.1 11.1 0 0 0 12 .9Z"/>
+            </svg>
+        </a>
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/Nav23_/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="social-btn leetcode"
+           aria-label="LeetCode"
+           title="LeetCode">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                      d="M16.1 17.1L12.8 20.4A5.3 5.3 0 0 1 5.3 12.9L11.5 6.7A5.3 5.3 0 0 1 19 6.7L17.4 8.3A3.1 3.1 0 0 0 13.1 8.3L6.9 14.5A3.1 3.1 0 0 0 11.3 18.9L14.5 15.7L16.1 17.1ZM10.2 11.1H20V13.3H10.2V11.1Z"/>
+            </svg>
+        </a>
+
+    </div>
+
+    </section>
+
+    <!-- ============ ABOUT (paragraphs, lists, description list, details) ============ -->
+    <section id="about" class="reveal">
+      <h2 class="section-title">About Me</h2>
+      <article class="about-grid">
+        <div>
+          <p>
+            I am a student , who is loves to solve problems. This portfolio is a <abbr title="HyperText Markup Language">HTML</abbr>,
+            <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="JavaScript">JS</abbr>
+            practice project.
+          </p>
+          <blockquote cite="https://example.com">
+            “Code is like humor. When you have to explain it, it&rsquo;s bad.”
+            <footer>— <cite>Cory House</cite></footer>
+          </blockquote>
+
+          <details>
+            <summary>Fun facts about me (click to expand)</summary>
+            <ul>
+              <li>I love solving problems.</li>
+              <li>I drink too much chai ☕</li>
+              <li>I am learning web development.</li>
+            </ul>
+          </details>
+        </div>
+
+        <!-- Description list -->
+        <dl class="info-list">
+          <dt>Name</dt><dd>Mohd Naved Alam</dd>
+          <dt>Location</dt><dd>Uttar Pradesh, India</dd>
+          <dt>Interests</dt><dd>Web design,Machine Learning , AI tools, DSA, Gym</dd>
+          <dt>Languages</dt><dd>English, Hindi</dd>
+        </dl>
+      </article>
+
+      <!-- Counters (animated by JS) -->
+      <div class="counters">
+        <div class="counter"><span class="count" data-target="3">0</span><p>Projects</p></div>
+        <div class="counter"><span class="count" data-target="5">0</span><p>Certificates</p></div>
+        <div class="counter"><span class="count" data-target="100">0</span><p>Coding Hours</p></div>
+        <div class="counter"><span class="count" data-target="3">0</span><p>Languages</p></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS (meter, progress, ordered list) ============ -->
+    <section id="skills" class="reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-bars">
+          <h3>Technical Skills</h3>
+          <label for="htmlSkill">HTML</label>
+          <meter id="htmlSkill" min="0" max="100" low="40" high="70" optimum="90" value="90">90%</meter>
+          <label for="cssSkill">CSS</label>
+          <meter id="cssSkill" min="0" max="100" low="40" high="70" optimum="90" value="80">80%</meter>
+          <label for="jsSkill">JavaScript</label>
+          <meter id="jsSkill" min="0" max="100" low="40" high="70" optimum="90" value="65">65%</meter>
+          <label for="pySkill">Python</label>
+          <meter id="pySkill" min="0" max="100" low="40" high="70" optimum="90" value="55">55%</meter>
+          <label for="pySkill">Python</label>
+          <meter id="pySkill" min="0" max="100" low="40" high="70" optimum="90" value="55">55%</meter>
+        </div>
+        <div>
+          <h3>My learning roadmap</h3>
+          <ol>
+            <li>Master HTML &amp; CSS</li>
+            <li>Learn JavaScript deeply</li>
+            <li>Learn a framework (React)</li>
+            <li>Build full-stack apps</li>
+          </ol>
+          <h3>Tools I use</h3>
+          <ul class="tags">
+            <li>VS Code</li><li>Git</li><li>GitHub</li><li>Chrome DevTools</li><li>Figma</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Canvas chart drawn by JS (HTML TOPIC: canvas) -->
+      <canvas id="skillChart" width="600" height="260" aria-label="Skill bar chart"></canvas>
+    </section>
+
+    <!-- ============ PROJECTS (cards, grid, filter buttons, modal) ============ -->
+    <!-- Projects Section -->
+<section id="projects" class="projects section">
+    <h2 class="section-title">My Projects</h2>
+    <p class="section-subtitle">Some things I've built while learning and exploring.</p>
+
+    <!-- Project Filters -->
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="html">HTML/CSS</button>
+        <button class="filter-btn" data-filter="cpp">C++</button>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="project-grid">
+
+        <!-- Project 1: Sentinel -->
+        <article class="card"
+                 data-category="python"
+                 data-title="Sentinel"
+                 data-desc="An NLP-based spam message detection system built using Python, Pandas, NumPy, and NLTK.">
+
+            <div class="card-content">
+                <span class="project-tag">Python · NLP</span>
+                <h3>Sentinel</h3>
+                <p>An NLP-based system designed to detect spam messages using natural language processing techniques.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>NLTK</span>
+                </div>
+                <button class="view-project">View Details</button>
+            </div>
+        </article>
+
+        <!-- Project 2: Book Store -->
+        <article class="card"
+                 data-category="html"
+                 data-title="Book Store"
+                 data-desc="A static online book library page created using HTML and CSS.">
+
+            <div class="card-content">
+                <span class="project-tag">Web Development</span>
+                <h3>Book Store</h3>
+                <p>A static online book library page designed to display books in a simple and organized layout.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+                <button class="view-project">View Details</button>
+            </div>
+        </article>
+
+        <!-- Project 3: Calculator -->
+        <article class="card"
+                 data-category="cpp"
+                 data-title="Calculator"
+                 data-desc="A calculator program for performing basic mathematical calculations.">
+
+            <div class="card-content">
+                <span class="project-tag">Programming</span>
+                <h3>Calculator</h3>
+                <p>A simple calculator program designed to perform mathematical calculations.</p>
+                <div class="project-tech">
+                    <span>C++</span>
+                </div>
+                <button class="view-project">View Details</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+    <!-- Modal for project details -->
+    <dialog id="projectModal" class="modal">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <button id="modalClose" class="btn">Close</button>
+    </dialog>
+
+    <!-- ============ EDUCATION (table) ============ -->
+    <section id="education" class="reveal">
+      <h2 class="section-title">Education &amp; Experience</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>My academic journey</caption>
+          <thead>
+            <tr><th scope="col">Year</th><th scope="col">Qualification</th><th scope="col">Institute</th><th scope="col">Score</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2026 – Present</td><td>B.Tech (CSDS)</td><td>GL Bajaj Institute of Technology and Management</td><td>Pursuing</td></tr>
+            <tr><td>2024</td><td>Class XII</td><td>St. Atulanand Convent School</td><td>85%</td></tr>
+            <tr><td>2022</td><td>Class X</td><td>St. Atulanand Convent School</td><td>95%</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="4">More achievements coming soon!</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    
+
+      <h3>Find me on the map</h3>
+      <!-- iframe embed -->
+      <iframe
+        title="Map of Greater Noida"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=77.45%2C28.42%2C77.57%2C28.52&amp;layer=mapnik"
+        loading="lazy"></iframe>
+    </section>
+
+    <!-- ============ CONTACT (form: many input types, validation) ============ -->
+    <section id="contact" class="reveal">
+      <h2 class="section-title">Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <fieldset>
+          <legend>Send a message</legend>
+
+          <label for="name">Full name *</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required minlength="3">
+          <small class="error" id="nameErr"></small>
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <small class="error" id="emailErr"></small>
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit number">
+          <small class="error" id="phoneErr"></small>
+
+          <label for="topic">Topic</label>
+          <input list="topics" id="topic" name="topic" placeholder="Choose or type">
+          <datalist id="topics">
+            <option value="Internship"></option>
+            <option value="Freelance work"></option>
+            <option value="Collaboration"></option>
+          </datalist>
+
+          <label for="budget">Budget: <output id="budgetOut">5000</output> ₹</label>
+          <input type="range" id="budget" name="budget" min="1000" max="50000" step="500" value="5000">
+
+          <label for="date">Preferred call date</label>
+          <input type="date" id="date" name="date">
+
+          <label for="role">I am a</label>
+          <select id="role" name="role">
+            <option>Recruiter</option>
+            <option>Student</option>
+            <option>Client</option>
+            <option>Friend</option>
+          </select>
+
+          <p class="group-label">Contact me by:</p>
+          <label class="inline"><input type="radio" name="mode" value="email" checked> Email</label>
+          <label class="inline"><input type="radio" name="mode" value="phone"> Phone</label>
+
+          <label class="inline"><input type="checkbox" id="news" name="news"> Subscribe to updates</label>
+
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="4" maxlength="200" placeholder="Write your message..." required></textarea>
+          <small><span id="charCount">0</span>/200 characters</small>
+          <small class="error" id="msgErr"></small>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <button type="reset" class="btn btn-outline">Reset</button>
+          </div>
+          <p id="formStatus" role="status"></p>
+        </fieldset>
+      </form>
+
+      <!-- Messages saved in localStorage show here -->
+      <h3>Messages stored in this browser</h3>
+      <ul id="messageList"></ul>
+      <button id="clearMessages" class="btn btn-outline">Clear stored messages</button>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <address>
+      Email: <a href="mailto:you@example.com">you@example.com</a> |
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </address>
+    <p>&copy; <span id="year"></span> Your Name. Visitor count: <strong id="visits">1</strong></p>
+  </footer>
+
+  <button id="topBtn" class="top-btn" aria-label="Back to top">↑</button>
+</body>
+</html>
